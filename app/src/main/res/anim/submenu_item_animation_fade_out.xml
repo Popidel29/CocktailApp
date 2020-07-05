@@ -1,0 +1,12 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@integer/menu_animation_duration"
+    android:fillEnabled="true"
+    android:fillAfter="true">
+
+    <alpha
+        android:fromAlpha="1"
+        android:toAlpha="0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        />
+
+</set>

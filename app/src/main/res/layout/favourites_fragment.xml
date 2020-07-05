@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/favourites_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <ProgressBar
+
+            android:id="@+id/favourites_pb_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/favourites_tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dm_default_margin"
+            android:layout_marginEnd="@dimen/dm_default_margin"
+            android:text="@string/txt_search_error" />
+
+        <Button
+            android:id="@+id/favourites_btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_search_btn_retry" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_favourites"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_favourites_my_favourite_cocktails"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_favourites_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_favourites_tip_content"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/contents_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_favourites"
+            android:layout_marginStart="@dimen/dm_default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dm_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dm_nav_bar_height"
+            android:layout_marginEnd="@dimen/dm_default_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/favourites_random_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="@string/txt_search_item_name"
+                android:textAlignment="center"
+                android:textSize="@dimen/dm_search_item_txt_size" />
+
+            <ImageView
+                android:id="@+id/favourites_random_iv_thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:contentDescription="@string/txt_search_content_description"
+                tools:src="@drawable/ic_cocktail_menu_item" />
+
+            <ProgressBar
+                android:id="@+id/favourites_pb_random_progress"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/favourites_random_tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scrollbars = "vertical"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:text="@string/txt_favourites_tv_description"
+                android:textSize="@dimen/txt_description_size" />
+            <Button
+                android:id="@+id/favourites_random_btn_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_button_margin_top"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dm_default_margin"
+                android:text="@string/txt_favourites_random_get"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

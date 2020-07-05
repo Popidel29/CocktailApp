@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CocktailApp</string>
+    <string name="txt_menu_item_search">Search</string>
+    <string name="txt_menu_item_favourites">Favourites</string>
+    <string name="txt_menu_item_shake">Shake!</string>
+    <string name="txt_search_error">Error</string>
+    <string name="txt_search_btn_retry">RETRY</string>
+    <string name="txt_favourites_my_favourite_cocktails">My Favourite Cocktails</string>
+    <string name="txt_favourites_tip_content">All your favourite cocktails are stored here.</string>
+    <string name="txt_search_item_name">Name</string>
+    <string name="txt_search_content_description">thumbnails</string>
+    <string name="txt_favourites_tv_description">Description</string>
+    <string name="txt_favourites_random_get">GET RANDOM</string>
+    <string name="txt_search_sw_query_hint">Search all cocktails…</string>
+    <string name="txt_search_recent_searches">Recent Searches</string>
+    <string name="txt_search_btn_add">ADD</string>
+    <string name="txt_search_suggestion_item">Suggestion</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_database_success">Successfully cached to database</string>
+    <string name="txt_database_error">Error caching to database</string>
+    <string name="txt_favourites_success">Successfully added to favourites!</string>
+    <string name="txt_favourites_error">Successfully removed from favourites!</string>
+    <string name="search_btn_text_add">ADD</string>
+    <string name="search_btn_text_remove">REMOVE</string>
+
+</resources>

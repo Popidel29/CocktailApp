@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dm_default_margin"
+    android:layout_marginTop="@dimen/dm_default_margin"
+    android:layout_marginEnd="@dimen/dm_default_margin"
+    android:layout_marginBottom="@dimen/dm_default_margin"
+    android:elevation="@dimen/dm_default_elevation"
+    android:padding="@dimen/dm_search_suggestions_padding_elevation"
+    app:cardElevation="@dimen/dm_search_suggestions_padding_elevation"
+    tools:targetApi="lollipop">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_suggestion"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/txt_search_suggestion_item"
+            android:layout_margin="@dimen/dm_default_margin"
+            android:textSize="@dimen/txt_text_size_22" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

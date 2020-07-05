@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:cardCornerRadius="@dimen/dm_corner_radius"
+    android:layout_width="@dimen/dm_favourites_item"
+    android:layout_height="@dimen/favourites_item_height"
+    android:layout_marginTop="@dimen/dm_default_margin"
+    android:layout_marginBottom="@dimen/dm_default_margin"
+    android:elevation="@dimen/dm_default_elevation"
+    android:padding="@dimen/dm_standard_padding"
+    tools:targetApi="lollipop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favourites_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_search_item_name"
+            android:textSize="@dimen/dm_search_item_txt_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/favourites_iv_thumb"
+            android:layout_width="@dimen/dm_image_favourites_item_width"
+            android:layout_height="@dimen/dm_imae_favourites_item_height"
+            android:layout_marginBottom="@dimen/dm_image_margin_bottom"
+            android:contentDescription="@string/txt_search_content_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favourites_tv_name"
+            tools:src="@drawable/ic_splash_screen" />
+
+        <TextView
+            android:id="@+id/favourites_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_favourites_tv_description"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favourites_iv_thumb"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
